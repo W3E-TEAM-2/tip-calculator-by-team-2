@@ -43,6 +43,7 @@ const calcPercentage = function (percentage) {
       }else {
               hidden.style.display = 'block';
               hidden.style.fontSize = 'smaller';
+            hidden.style.color = 'red';
       }
   
 }
