@@ -19,9 +19,6 @@
 body{
     background-color: hsl(172, 34%, 75%);
     font-family: var(--font-family);
-}
-
-.container{
     margin: 3rem auto;
     padding: 1rem;
     text-align: left;
@@ -30,8 +27,8 @@ body{
     display: block;
     margin: 0 auto 3.5rem;
 }
-.card-container{
-    min-width: 350px;
+.container{
+    width: 355px;
     height: auto;
     background-color: var(--White);
     padding: 1rem;
@@ -73,9 +70,6 @@ h5, h6{
     outline: none !important;
     border: 2px solid hsl(172, 67%, 45%);
 }
-/* .select-option{
-    margin: 2rem 0;
-} */
 .btn{
     height: 1.7rem;
     display: block;
@@ -200,7 +194,7 @@ font-weight: lighter;
 }
 
 @media screen and (min-width: 657px) {
-    .card-container{
+    .container{
         width: 95vw;
         height: auto;
         display: flex;
@@ -210,7 +204,7 @@ font-weight: lighter;
     .btn{
         font-size: 1.5rem;
     }
-    .btn-input{
+    .custom{
         font-size: 1.5rem;
     }
     .tip {
@@ -224,7 +218,10 @@ font-weight: lighter;
     .show-total{
         font-size: 2rem;
     }
-    .total{
+    .show-total-2{
+        font-size: 2rem;
+    }
+    .right{
         margin-top: 1rem;
         width: 48%;
     }
@@ -234,13 +231,13 @@ font-weight: lighter;
     }
 }
 @media screen and (min-width: 867px) {
-    .card-container {
+    .container {
         width: 80vw;
         height: auto;
     }
 }
 @media screen and (min-width: 1140px) {
-    .card-container {
+    .container {
         width: 65vw;
     }
 }
