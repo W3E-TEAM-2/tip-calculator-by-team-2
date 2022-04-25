@@ -30,7 +30,8 @@
         <h5 class="paragraph"> Bill</h5>
         <input type="number" class="bill" placeholder="                                     0" >
 
-        <h5 class="paragraph">Select Tip % </h5>
+       <div class="select-option">
+          <h5 class="paragraph">Select Tip % </h5>
       <div class="btns">
         <button class="btn five">5%</button>
         <button class="btn ten">10%</button>
@@ -39,16 +40,19 @@
         <button class="btn fifty">50%</button>
         <input type="number" class="custom" placeholder="Custom">
       </div>
+         </div>
 
       <div class="num">
-        <h5> Number of People <span class="hidden">Can't be zero</span></h5>
+        <h5> Number of People</h5>
+        <span class="hidden">Can't be zero</span>
+        </div>
         <input type="number" class="no-of-people" placeholder="                                      0">
-      </div>
+      
 
     </section>
 
 <!-- right -->
-<div class="right">
+<div class="total right">
     <div class="tip">
         <section>
             <h5>Tip Amount</h5>
@@ -59,7 +63,6 @@
         <span class="show-total pay-tip">0.00</span>
     </div>
     </div>
-</div>
 
 <div class="tip">
     <section>
@@ -71,10 +74,11 @@
         <span class="show-total-2 pay-tip">0.00</span>
     </div>
 </div>
+  
 
 <!-- reset button -->
 <button class="reset-btn">Reset</button>
-
+</div>
     </div>
 </main>
 
