@@ -70,6 +70,9 @@ h5, h6{
     outline: none !important;
     border: 2px solid hsl(172, 67%, 45%);
 }
+.select-option{
+    margin: 2rem 0;
+}
 .btn{
     height: 1.7rem;
     display: block;
