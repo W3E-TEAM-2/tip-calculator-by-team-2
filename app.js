@@ -86,8 +86,8 @@ reset.addEventListener('click', function () {
   bill.value = 'null';
   numOfPeople.value = 'null';
   hidden.style.display = 'none';
-  amountResult.textContent = '$ 0.00';
-  totalResult.textContent = '$ 0.00';
+  amountResult.textContent = '0.00';
+  totalResult.textContent = '0.00';
   custom.value ='';
 })
 
