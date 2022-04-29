@@ -32,11 +32,14 @@ const calcPercentage = function (percentage) {
   //setting tip conditions
       if (bill != 0 && numOfPeople != 0) {
 
-            let amountTotal = bill * percentage/100;
-            amountResult.textContent = amountTotal + '.00';
+            let amountTotal = bill * (percentage/100);
+            let tipPerPerson = amountTotal/numOfPeople;
+            amountResult.textContent = tipPerPerson + '.00';
 
             let total =  bill + (amountTotal * numOfPeople);
-            totalResult.textContent = total +`.00`;
+            let totalPerPerson = (bill/numOfPeople) + tipPerPerson;
+            totalResult.textContent = totalPerPerson +`.00`;
+            
 
             hidden.style.display = 'none';
 
