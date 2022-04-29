@@ -12,7 +12,7 @@ const fifty = document.querySelector('.fifty');
 
 const hidden = document.querySelector('.hidden');
 
-const amountResult = document.querySelector('.show-total');
+const tipResult = document.querySelector('.show-total');
 const totalResult = document.querySelector('.show-total-2');
 
 const reset = document.querySelector('.reset-btn');
@@ -32,20 +32,18 @@ const calcPercentage = function (percentage) {
   //setting tip conditions
       if (bill != 0 && numOfPeople != 0) {
 
-            let amountTotal = bill * (percentage/100);
-            let tipPerPerson = amountTotal/numOfPeople;
-            amountResult.textContent = tipPerPerson + '.00';
+            let tip = bill * (percentage/100);
+            let tipPerPerson = tip/numOfPeople;
+            tipResult.textContent = (tipPerPerson.toFixed()) + '.00';
 
-            let total =  bill + (amountTotal * numOfPeople);
-            let totalPerPerson = (bill/numOfPeople) + tipPerPerson;
-            totalResult.textContent = totalPerPerson +`.00`;
-            
+            let total = ( bill + tip)/numOfPeople;
+            totalResult.textContent = (total.toFixed()) +`.00`;
 
             hidden.style.display = 'none';
 
       }else {
-              hidden.style.display = 'block';
-              hidden.style.fontSize = 'smaller';
+            hidden.style.display = 'block';
+            hidden.style.fontSize = 'smaller';
             hidden.style.color = 'red';
       }
   
@@ -82,7 +80,6 @@ custom.addEventListener('input', function () {
     
   }  
   })
-
 
 //the reset function
 reset.addEventListener('click', function () {
